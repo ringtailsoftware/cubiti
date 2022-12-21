@@ -1,0 +1,35 @@
+---
+version: '3'
+
+services:
+    cubiti-server:
+        build: cubiti-server
+        image: cubiti-server
+        stdin_open: true
+        tty: true
+        container_name: cubiti
+        restart: unless-stopped
+        security_opt:
+            - no-new-privileges:true
+        volumes:
+            - ./data:/data
+
+    redis:
+        image: redis
+        container_name: redis
+        restart: unless-stopped
+        security_opt:
+            - no-new-privileges:true
+
+    nginx-alpine-ssl:
+        build: nginx-alpine-ssl
+        image: nginx-alpine-ssl
+        container_name: nginx-alpine-ssl
+        depends_on:
+            - cubiti-server
+        restart: always
+        security_opt:
+            - no-new-privileges:true
+        ports:
+            - "443:443"
+

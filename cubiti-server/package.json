@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "ws": "^8.11.0",
+    "sqlite3": "^5.1.4",
+    "vorpal": "^1.12.0",
+    "bcrypt": "^5.1.0",
+    "passport": "^0.6.0",
+    "passport-bearer-strategy": "^1.0.1",
+    "express-session": "^1.17.3",
+    "cookie-parser": "^1.4.6",
+    "passport-local": "^1.0.0",
+    "connect-ensure-login": "^0.1.1",
+    "ejs": "^3.1.8",
+    "cors": "^2.8.5",
+    "request": "^2.88.2",
+    "url-safe-base64": "^1.2.0",
+    "node-fetch": "^2.6.7",
+    "formidable": "^2.1.1",
+    "image-size": "^1.0.2",
+    "blurhash": "^2.0.4",
+    "@andreekeberg/imagedata": "^1.0.2",
+    "redis": "^4.5.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

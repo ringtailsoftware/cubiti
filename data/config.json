@@ -1,0 +1,19 @@
+{
+    "server": {
+        "domain": "localhost",
+        "title": "cubiti",
+        "short_description": "cubiti, a toy fediverse server",
+        "description": "Mastodon in the front, ActivityPub in the back!",
+        "email": "admin@localhost",
+        "adminuser": "cubiti",
+        "thumbnail": "images/cubiti-logo-icon.png"
+    },
+    "redis": "redis://redis:6379",
+    "default_avatar": "images/cubiti-logo-icon.png",
+    "default_header": "images/cubiti-logo.png",
+    "supported_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/gif"
+    ]
+}
